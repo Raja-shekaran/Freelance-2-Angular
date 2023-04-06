@@ -1,0 +1,43 @@
+<head>
+  <link rel="stylesheet" href="login.component.css">
+</head>
+<div style="height: 100vh; margin:  auto;align-items: center; background-size: 100% 100%; display: flex; background-repeat: no-repeat; background-image: url('/assets/img/LOGIN PAGE.jpg');">
+<div class="container" style="max-width: 600px; background-color: whitesmoke;">
+  <h2 class="textual" style="text-align: center; font-weight: bolder; font-family: Source Sans Pro;">LOGIN</h2>
+    <form #loginform="ngForm" (ngSubmit)="loginUser()">
+      <!--{{loginform.form.valid}}-->
+      <small class="text-danger">{{msg}}</small>
+      <div class="form-group" >
+        <label for="email" style="padding-bottom: 5px;">Email:</label>
+        <input type="email" class="form-control"  placeholder="Enter email" name="email"[(ngModel)]="user.emailId" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        #email="ngModel"
+        [class.is-invalid]="email.invalid && email.touched"
+        >
+        <!-- <small class="text-danger" [class.d-none]="email.invalid || email.untouched">Email Id is required feild</small> -->
+
+        <div *ngIf="email.errors && email.invalid && email.touched">
+          <small class="text-danger" *ngIf="email.errors.required">Email Id is required field</small>
+          <small class="text-danger" *ngIf="email.errors.pattern">Enter the valid emailId </small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="pwd" style="padding-bottom: 5px;">Password:</label>
+        <input type="password" class="form-control"  placeholder="Enter password" name="password"[(ngModel)]="user.password" #password= "ngModel" required
+        [class.is-invalid]="password.invalid && password.touched"
+        >
+        <small class="text-danger" [class.d-none]="password.valid || password.untouched" >Password is required feild</small>
+      </div>
+      <div class="checkbox" style="padding-top: 10px;">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div><div style="text-align: center; padding-top: 30px; ">
+        <button [disabled]="loginform.form.invalid" type="submit" class="regbt">Login</button>
+
+      </div>
+      
+    </form>
+   <!-- <small class="float-right"(click)="gotoregistration()">New User? Register here</small>-->
+   <div style="text-align: center;">
+    <a href="#" class="float-right btextual" [routerLink]="['/registration']"><br/>New user? Login here</a>
+  </div>
+  </div>
+</div>  

@@ -1,0 +1,15 @@
+.regbt
+{
+  background: orange;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  color: white;
+}
+* {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: bold;
+   }

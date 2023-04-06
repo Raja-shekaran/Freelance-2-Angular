@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="home.component.css" rel="stylesheet" />
+	
+	
+</head>
+
+
+<body> 
+
+	
+	<div class="container">
+		<div>
+			<img class="i" src="https://i.pinimg.com/originals/8b/b3/87/8bb387ee878eddeb23baea344d4e13af.gif" alt=""/>
+			<div>
+				<img class="lg" src="/assets/img/home.png" alt="">
+				<h1 class="centered">
+					Tout le monde peut cuisiner
+				</h1>
+			</div>
+		</div>
+						
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to Delicious restaurant</h2>
+				<p class="col-12 text-center">Bon Appétit</p>
+			</header>
+			
+			<div class="tm-menu">
+				<h2 class="col-12 text-center tm-section-title" style="font-style: italic;color: rgb(128, 0, 64); text-align: center;">MENU</h2>
+				
+			</div>
+			<div class="row tm-gallery">
+				<div id="tm-gallery-page-pizza" class="tm-gallery-page">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img [src]="img1" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Veg salad</h4>
+								<p class="tm-gallery-price">₹45</p>
+								
+
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img [src]="img2" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Pizza</h4>
+								<p class="tm-gallery-price">₹95</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img [src]="img3" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Chicken Roll</h4>
+								<p class="tm-gallery-price">₹75</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img [src]="img4" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Cheesy Pasta</h4>
+								
+								<p class="tm-gallery-price">₹95</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img [src]="img5" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Meat Balls</h4>
+								<p class="tm-gallery-price">₹55</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img [src]="img6" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Pancake</h4>
+								<p class="tm-gallery-price">₹45</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img [src]="img7" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Greek Salad</h4>
+								
+								<p class="tm-gallery-price">₹65</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img [src]="img8" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Momos</h4>
+								
+								<p class="tm-gallery-price">₹75</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+				</div> 	 
+				<div style="padding-left: 525px;">
+					<button routerLink="/homeimg" class="regbt">ORDER NOW!</button></div>
+			</div>
+			
+			
+			<div class="tm-section tm-container-inner">
+				<div class="tm-Special" style="padding-top: 20px;padding-bottom: 50px;">
+					<h2 class="col-12 text-center tm-section-title" style="font-style: italic;color: rgb(128, 0, 64); text-align: center;">TODAY'S SPECIAL</h2>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img [src]="img9" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box"> 
+							<h4 class="tm-gallery-title">Taco</h4>
+							<p class="tm-mb-45">Served on corn tortillas and are stuffed with meat. Traditional toppings include onions, cilantro, and salsa.  No lettuce, tomatoes, or cheese in traditional street tacos.</p>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img [src]="img10" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box"> 
+							<h4 class="tm-gallery-title">Burger</h4>
+							<p class="tm-mb-45">Usually ground meat, typically beef—placed inside a sliced bread roll or bun. The patty made with pan fried, grilled, smoked or flame broiled</p>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img [src]="img11" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box"> 
+							<h4 class="tm-gallery-title">Crispy Chicken</h4>
+							<p class="tm-mb-45">Crunchy" and "juicy", as well as "crispy". spicy" and "salty". Occasionally, fried chicken is also topped with chili like paprika.</p>
+							
+				
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</main>
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">About Delicious restaurant</h2>
+			</header>
+
+			<div class="tm-container-inner tm-persons">
+				<div class="row">
+					<article class="col-lg-6">
+						<figure class="tm-person">
+							<img [src]=" image1" alt="Image" class="img-fluid tm-person-img" />
+							<figcaption class="tm-person-description">
+								<h4 class="tm-person-name">Jennifer Soft</h4>
+								<p class="tm-person-title">Founder and CEO</p>
+								<p class="tm-person-about">founder needs to secure funding, bring resources, and market the brand.</p>
+								<div>
+									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
+									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
+									<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-6">
+						<figure class="tm-person">
+							<img [src]=" image2" alt="Image" class="img-fluid tm-person-img" />
+							<figcaption class="tm-person-description">
+								<h4 class="tm-person-name">Daisy Walker</h4>
+								<p class="tm-person-title">Executive Chef</p>
+								<p class="tm-person-about">responsible for all of the food coming out of the kitchen></p>
+								<div>
+									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
+									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					
+				</div>
+			</div>
+			
+			<div class="tm-container-inner tm-features">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<i class="fas fa-4x fa-pepper-hot tm-feature-icon"></i>
+							<p class="tm-feature-description">Reduce inflammation and decrease the chances of heart disease. If you're one of the many people in the world with obesity, you may be interested to know that chili peppers are thought to stimulate weight loss.</p>
+							
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<i class="fas fa-4x fa-seedling tm-feature-icon"></i>
+							<p class="tm-feature-description">Anti-inflammatory properties can help to lower the risk of inflammatory conditions such as arthritis. heart disease, and bowel issues. Basil has antibacterial properties. The oils in the herb may help to fight bacteria in people with respiratory, urinary, abdominal, and skin infections.</p>
+							
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<i class="fas fa-4x fa-cocktail tm-feature-icon"></i>
+							<p class="tm-feature-description">Fruit juice strengthens your immune system, aids digestion and prevents allergies & ailments from entering your system. Fruit juices detoxify your body and naturally flush out the toxins from your body which results in weight loss..</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-container-inner tm-history">
+				<div class="row">
+					<div class="col-12">
+						<div class="tm-history-inner">
+							<img [src]=" image6" alt="Image" class="img-fluid tm-history-img" />
+							<div class="tm-history-text"> 
+								<h4 class="tm-history-title">History of our restaurant</h4>
+								<p class="tm-mb-p">Delicious restaurant sets a high standard for its food quality and ensures that guests receive the same quality with every meal. ... A good cook understands your guests' needs and works well with the kitchen staff to ensure that guests receive their meal the way they ordered it every time.</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright © 2021 Delicious restaurant. All Rights Reserved</p> 
+		</footer>
+	</div>
+	
+	
+</body>
+</html>
